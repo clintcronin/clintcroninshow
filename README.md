@@ -1,2 +1,1 @@
-# clintcroninshow
-Clint Cronin Show
+# clintandkash
