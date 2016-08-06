@@ -1,0 +1,45 @@
+<% layout('layout') -%>
+
+<div id="episode-container" class="ajax-container">
+	<div class="episode-individual">
+		<div id="audio-player">
+			<paper-audio-player src="<%- sanitizeHtml(episode.enclosures[0].url) %>" title="<%- sanitizeHtml(episode.title) %>" color="#E20505"></paper-audio-player>
+		</div>
+		<br/> <br/>
+		<div class="episode-image">
+			<img src="<%- sanitizeHtml(episode.imageSrc) %>">
+			<!-- FIX ME : make this a partial -->
+			<div id="share-each-buttons" class="share-each-buttons">
+				<!-- source for this 	https://simplesharebuttons.com/html-share-buttons/ -->
+			    <!-- Facebook -->
+			    <a href="http://www.facebook.com/sharer.php?u=http://www.clintandkash.com/episodes/<%-episode.guid%>" target="_blank">
+			        <img src="./img/facebook-share.png" alt="Facebook" />
+			    </a>
+			    <!-- Google+ -->
+			    <a href="https://plus.google.com/share?url=http://www.clintandkash.com/episodes/<%-episode.guid%>" target="_blank">
+			        <img src="./img/google-share.png" alt="Google" />
+			    </a>
+			    <!-- Twitter -->
+			    <a href="https://twitter.com/share?url=http://www.clintandkash.com/episodes/<%-episode.guid%>&amp;text=Clint%20and%20Kash%20Podcast&amp;hashtags=clintandkash" target="_blank">
+			        <img src="./img/twitter-share.png" alt="Twitter" />
+			    </a>    
+			    <!-- Reddit -->
+			    <a href="http://reddit.com/submit?url=http://www.clintandkash.com/episodes/<%-episode.guid%>&amp;title=Clint and Kash Podcast" target="_blank">
+			        <img src="./img/reddit-share.png" alt="Reddit" />
+			    </a>
+			    <!-- Patreon -->
+			    <a href="https://www.patreon.com/bePatron?patAmt=1&u=2441404" target="_blank">
+			        <img src="./img/patreon.png" alt="Patreon" />
+			    </a>
+			    <a href="<%- episode.enclosures[0].url %>" target="_blank">
+			        <img src="./img/download1.png" alt="Download" />
+			    </a>
+			</div>
+		</div>
+		<div class="episode-details">
+			<div class="episode-date"> <%- episode.pubDate.toDateString() %> </div>
+			<%- episode.description %>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>

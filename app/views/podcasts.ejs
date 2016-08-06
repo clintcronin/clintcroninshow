@@ -1,0 +1,38 @@
+<% layout('layout') -%>
+<%
+	terminateHtml = function(text) {
+		var maxChars = 500;
+		text = text.replace(/\u00A0/g,'');
+		if (text.length <= maxChars) return text;
+		var lastClosingTag = text.lastIndexOf("</", maxChars);
+		return text.substring(0, lastClosingTag);
+	}
+%>
+<div id="podcasts-ajax-container" class="ajax-container">
+	<div class="episodes-container" id="episodes-container">
+		<% var index = 0; %>
+		<% var allowedTags = [ 'p', 'a', 'ul', 'ol', 'li', 'b', 'i', 'strong', 'em', 'br' ] %>
+		<% items.forEach(function(item) { %>
+			<% var evenOrOdd = index % 2 == 0 ? 'even' : 'odd'; %>
+			<div class="episode <%= evenOrOdd %>">
+				<div class="podcast-thumbnail">
+					<a href="/episodes?id=<%-item.guid%>">
+						<img src="<%- sanitizeHtml(item.imageSrc) %>" width="120" height="100">
+					</a>
+					<div class="podcast-date"> <%- item.pubDate.toDateString() %> </div>
+				</div>
+				<div class="podcast-details">
+					<div class="podcast-title"> 
+						<a href="/episodes?id=<%-item.guid%>"><%- sanitizeHtml(item.title) %></a>
+					</div>
+					<div class="podcast-description">
+						<%- terminateHtml(sanitizeHtml(item.description , {allowedTags : allowedTags})) %>
+					</div>
+				</div>
+				<% include partials/share.ejs %>
+				<div class="clearfix"></div>
+			</div>
+			<% index = index + 1; %>
+		<% }); %>
+	</div>
+</div>

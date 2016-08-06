@@ -1,0 +1,647 @@
+
+
+body {
+    background-size: 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://dl.dropboxusercontent.com/u/554526/clint-and-kash-bg.jpg);
+    font-family: Arial, Helvetica, 'Sans-Serif';
+    font-size: 14px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+/*----------------------------Header CSS------------------------------------------------*/
+.menu-bar {
+    height: 118px;
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+.menu-bar li {
+    float: left;
+    margin-right: 15px;
+}
+
+.menu-bar li a {
+    display: block;
+    color: #888888;
+    text-align: center;
+    padding: 15px 35px;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: 100;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    letter-spacing: .05em;
+    border: 5px solid #e8e8e8;
+}
+
+.menu-bar a:hover:not(.active) {
+    color: #e20505;
+    border-color: #e20505;
+}
+
+.menu-bar .active {
+    background-color: #e20505;
+    color: #ffffff;
+    border-color: #e20505;
+}
+
+.logo {
+    margin: -5px auto 0;
+    display: block;
+    width: 450px;
+}
+.nav-bar {
+    width: 100%;
+    position: absolute;
+    bottom: -217px;
+}
+
+.social {
+    position: absolute;
+    top: 7px;
+}
+
+div.nav-bar {
+    width: 100%;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 1px;
+    overflow: hidden;
+    width: 580px;
+    display: block;
+}
+
+.clearfix{
+    clear:both
+}
+
+/*----------------------------Social Buttons CSS------------------------------------------------*/
+a.social-roll {
+    height: 28px;
+    width: 28px;
+    margin: 5px;
+    float: left;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+a.social-roll:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
+a.twitter {
+    background-image: url('../img/twitter-28circle.png');   
+}
+a.facebook {
+    background-image: url('../img/facebook-28circle.png');   
+}
+a.instagram {
+    background-image: url('../img/instagram-28circle.png');   
+}
+a.itunes {
+    background-image: url('../img/apple-28circle.png');   
+}
+a.google-play {
+    background-image: url('../img/google-play-28circle.png');   
+}
+a.youtube {
+    background-image: url('../img/youtube-28circle.png');   
+}
+a.rss {
+    background-image: url('../img/rss-28circle.png');   
+}
+a.patreon {
+    background-image: url('../img/patreon-28circle.png');   
+}
+
+/*----------------------------Podcasts CSS------------------------------------------------*/
+/*.horizontal-filler {
+    height: 100px;
+    width: 100%;
+    background: black;
+    opacity: 0;
+}*/
+
+.container{
+margin-top: 200px; 
+margin-bottom: 50px;}
+
+.episodes-container, .episode-container {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.episode {
+    min-height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position:relative;
+    margin: 20px 0;
+    display: block;
+    
+}
+
+.episode-individual, #podcasts-ajax-container, #videos-ajax-container, #gallery-ajax-container {
+    max-width: 1000px;
+    margin: 0 auto 0;
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 20px 6px rgba(0,0,0,0.6);
+}
+
+div.episode-image {
+  width: 560px;
+  height: 600px;
+}
+
+div.episode-image img {
+    width: 500px;
+    width: 96%;
+    height: 600px;
+    height: auto;
+    border: solid 3px #E20505;
+    float: left;
+    border-radius: 7px;
+}
+
+#share-each-buttons {
+    width: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 30%;
+    right: 0;   
+}
+
+#share-each-buttons img {
+    width: 25px;
+    height: 25px;
+    /*padding: 5px;*/
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+.episode-date {
+    font: 1.8em arial, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: left;
+}
+
+div.episode-image {
+  float: left;
+}
+
+div.episode-details {
+  /*background-color: #CBC4C4;*/
+  padding-left: 35px;
+  /*float: right;*/
+}
+
+.even {
+    background-color: #ececec;
+}
+
+.podcast-thumbnail {
+    width: 33%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.podcast-date {
+    font: 15px arial, sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.podcast-details {
+    padding-left: 3%;
+    width: 63%;
+    height: 100%;
+}
+
+.podcast-title {
+    height: 20%;
+}
+
+.podcast-title a {
+    text-decoration: none;
+    font: 30px arial, sans-serif;
+    font-weight: 100;
+    color: #E20505;
+    margin-top: 20px;
+    display: block;
+}
+
+.podcast-description {
+    height: 45%;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.podcast-thumbnail, .podcast-details {
+    float: left;
+}
+
+.podcast-thumbnail img{
+    width: 100%;
+    height: auto;}
+
+/*----------------------------Audio Player CSS------------------------------------------------*/
+.paper-audio-player-0 {
+        margin-left: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 7px solid #e20505;
+    display: block;
+    margin: auto 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.paper-audio-player-0 #center.paper-audio-player, .paper-audio-player-0 #right.paper-audio-player {
+    background-color: #201F1F;
+}
+
+.paper-audio-player-0 #title.paper-audio-player, .paper-audio-player-0 #progress2.paper-audio-player {
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 60px !important;
+}
+
+.paper-audio-player-0 #wrapper.paper-audio-player {
+  height: 100px;
+}
+
+.paper-audio-player-0 #left.paper-audio-player, .paper-audio-player-0 #right.paper-audio-player {
+  width: 100px;
+  height: 100%;
+}
+
+.paper-icon-button-0 {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.paper-audio-player-0 #duration.paper-audio-player {
+  font-size: 20px;
+  /*padding-top: 20px;*/
+}
+
+#duration .fit.paper-audio-player {
+  top: 20px;
+}
+
+/*----------------------------Podcasts Social Share CSS------------------------------------------------*/
+#share-buttons {
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    right: -8px;
+    z-index: 20;
+    top: 4px;
+} 
+
+#share-buttons img {
+    width: 25px;
+    /*padding: 5px;*/
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+    padding-left: 20px;
+    margin-top: 5px;
+    /*display: none;*/
+}
+
+#share-buttons img#share-btn {
+    width: 35px;
+    padding-left: 15px;
+    display: block;
+    cursor: pointer;
+}
+/*----------------------------About CSS------------------------------------------------*/
+div.about-me {
+    height: 50%;
+    margin: 100px;
+}
+
+.about-img {
+    width: 43%;
+}
+
+.about-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-content {
+    width: 50%;
+    padding-top: 20px;
+}
+
+#clinton-img, #kash-about, #follow-clinton, #follow-kash {
+    float: left;
+}
+
+#clinton-about, #kash-img {
+    float: right;
+}
+
+#kash-about {
+    padding-left: 40px;
+}
+
+span.name {
+    font: 25px arial, sans-serif;
+    font-weight: bold;
+    color: #E20505;
+}
+
+span.city {
+    font: 15px arial, sans-serif;
+    font-weight: bold;
+}
+
+span.quotes {
+    font: arial, sans-serif;
+    font-weight: bold;
+}
+
+span.quote {
+    font: arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.about-container {
+    background-color: #CBC4C4;
+    border-style: solid;
+}
+
+div.follow-me {
+    width: 35px;
+    height: 120px;
+}
+
+a.follow {
+    height: 28px;
+    width: 28px;
+    margin: 3px;
+    float: left;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+/*----------------------------Gallery CSS------------------------------------------------*/
+
+.thumb {
+  max-height: 171px;
+  border: solid 6px rgba(5, 5, 5, 0.8);
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.lightbox img, .lightbox video {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+  opacity: 0;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  width: 100%;
+  height: 100%;
+  opacity: 1 !important;
+}
+
+.lightbox:target img, .lightbox:target video {
+  border: solid 17px rgba(77, 77, 77, 0.8);
+  opacity: 1;
+  webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.light-btn {
+  color: #fafafa;
+  background-color: #333;
+  /*border: solid 3px #777;*/
+  padding: 5px 15px;
+  /*border-radius: 1px;*/
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  position: absolute;
+  top: 45%;
+  z-index: 99;
+}
+
+.light-btn:hover { background-color: #111; }
+
+.btn-prev { left: 7%; }
+
+.btn-next { right: 7%; }
+
+.btn-close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  color: #fafafa;
+  background-color: #92001d;
+  /*border: solid 5px #ef4036;*/
+  padding: 10px 15px;
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+.btn-close:hover { background-color: #740404; }
+
+span.caption {
+    font: 17px arial, sans-serif;
+    font-weight: normal;
+    color: #E20505;
+    position: absolute;
+    bottom: 3%;
+    left: 0%;
+    width: 100%;
+}
+
+div#gallery {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 8%;
+    top: 25%;
+    bottom: 8%;
+}
+
+#more-gallery {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+#more-gallery a {
+    position: absolute;
+    margin: 2px;
+    text-decoration: none;
+    color: black;
+    font: 20px arial, sans-serif;
+    font-weight: bold;
+    left: 40%;
+    right: 40%;
+    border: solid 4px;
+    text-align: center;
+    bottom: 8%;
+}
+
+#gallery-container {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*----------------------------Video CSS-----------------------------------------------*/
+
+div.video-container {
+  width: 170px;
+  height: 170px;
+  margin: 25px;
+  float: left;
+}
+
+div.video-container img.thumb {
+  width: 144px;
+  height: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div.video-title {
+  font: 15px arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*----------------------------Home CSS------------------------------------------------*/
+
+div#intro {
+  width: 30%;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 5%;
+  font: 18px arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+}
+
+div#patreon-btn {
+  width: 30%;
+  height: 8%;
+  padding-top: 3%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+div#patreon-btn img {
+  width: 90%;
+  height: 90%;
+}
+
+span#patreon-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+div#latest-episode {
+  width: 55%;
+  /*padding-left: 5%;*/
+  padding-right: 5%;
+  padding-top: 5%;
+  float: right;
+}
+
+div#latest-episode .episode-image {
+  width: 300px;
+  height: 300px;
+}
+
+div#latest-episode .episode-image > img {
+  width: 280px;
+  height: 300px;
+  border: solid 5px #E20505;
+}
+
+div.latest-episode-details {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+    }
+}

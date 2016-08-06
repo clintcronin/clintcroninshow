@@ -1,0 +1,24 @@
+{
+  "name": "clintandkash",
+  "description": "Website for the Clint & Kash podcast",
+  "main": "index.js",
+  "authors": [
+    "Deepika Misra"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/misradeepika/clintandkash",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-audio-player": "^0.2.1"
+  },
+  "resolutions": {
+    "iron-icons": "~1.0.3"
+  }
+}

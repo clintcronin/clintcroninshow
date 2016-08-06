@@ -1,0 +1,11 @@
+<% layout('layout') -%>
+<div id="gallery-ajax-container" class="ajax-container">
+	<div id="gallery">
+		<% include partials/galleryMedia.ejs %>
+	</div>
+	<div id="more-gallery">
+		<% if (nextMaxId != null) { %>
+			<a data-nextMaxId="<%=nextMaxId%>" data-lastCount="<%=lastCount + media.length%>"> View More </a>
+		<% } %>
+	</div>
+</div>

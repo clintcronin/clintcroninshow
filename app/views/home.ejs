@@ -1,0 +1,19 @@
+<% layout('layout') -%>
+<!-- has an intro to what the website is about -->
+<div id="intro">
+	<% include partials/intro.ejs%>
+</div>
+<div id="latest-episode">
+		<div id="audio-player">
+			<paper-audio-player src="<%- sanitizeHtml(episode.enclosures[0].url) %>" title="<%- sanitizeHtml(episode.title) %>" color="#E20505"></paper-audio-player>
+		</div>
+		<br/> <br/>
+		<div class="episode-image">
+			<img src="<%- sanitizeHtml(episode.imageSrc) %>">
+		</div>
+		<div class="latest-episode-details">
+			<%- episode.description %>
+		</div>
+		<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>

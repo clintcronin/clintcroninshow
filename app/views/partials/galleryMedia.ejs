@@ -1,0 +1,23 @@
+<% var index = parseInt(lastCount) %>
+<% media.forEach(function(med) { %>
+	<% index += 1; %>
+	<a href="#img<%=index%>">
+		<img class="thumb" src="<%= med.thumbnail.url %>">
+	</a>
+	<!-- lightbox container hidden with CSS -->
+	<div class="lightbox" id="img<%=index%>">
+		<span class="caption"><%=med.caption%></span>
+	  	<% var prevIndex = index == 1 ? media.length : index - 1; %>
+	  	<a href="#img<%=prevIndex%>" class="light-btn btn-prev">prev</a>
+	  	<a href="#_" class="btn-close">X</a>
+	  	<% if (med.type == "image") { %>
+	  		<img src="<%=med.image.url%>">
+	  	<% } else { %>
+	  		<video>
+  				<source src="<%=med.image.url%>" type="video/mp4">
+  			</video>
+	  	<% } %>
+	  	<% var nextIndex = index == media.length ? 1 : index + 1; %>
+	  	<a href="#img<%=nextIndex%>" class="light-btn btn-next">next</a>
+	</div>
+<% }) %>
