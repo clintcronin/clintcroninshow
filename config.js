@@ -24,7 +24,7 @@ module.exports = {
 		}
 	},
 	instagram : {
-		clintandkashUserId : "19879795",
+		clintcroninUserId : "19879795",
 		accessToken : "3253713869.1677ed0.aacfb82ed1d145f3a3286ce7a5804931",
 		maxImagesCount : 20
 	},

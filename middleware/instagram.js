@@ -3,7 +3,7 @@ var config = require('./../config.js');
 
 var igClient = new instagram(config.instagram.accessToken);
 var maxImagesPerReq = config.instagram.maxImagesCount;
-var userId = config.instagram.clintandkashUserId;
+var userId = config.instagram.clintcroninUserId;
 
 exports.getInstagramPictures = function(maxId, callback) {
 	igClient.users.media.recent(userId, {count : maxImagesPerReq, max_id : maxId}, function(err, data) {
