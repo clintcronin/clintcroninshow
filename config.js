@@ -1,6 +1,6 @@
 module.exports = {
 	env : process.env.environment || "development",
-	mongoUri : process.env.MONGODB_URI || "mongodb://localhost:27017/clintandkash",
+	mongoUri : process.env.MONGODB_URI || "mongodb://localhost:27017/clintcroninshow",
 	development : {
 		loadDBInterval : 3600*1000,
 		logger : {
@@ -24,7 +24,7 @@ module.exports = {
 		}
 	},
 	instagram : {
-		clintandkashUserId : "3253713869",
+		clintandkashUserId : "19879795",
 		accessToken : "3253713869.1677ed0.aacfb82ed1d145f3a3286ce7a5804931",
 		maxImagesCount : 20
 	},
@@ -34,6 +34,6 @@ module.exports = {
 		maxResults : 10
 	},
 	rssFeed : {
-		url : "http://brownbelts.libsyn.com/rss"
+		url : "http://clintcronin.libsyn.com/rss"
 	}
 };

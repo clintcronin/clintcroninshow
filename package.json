@@ -1,21 +1,21 @@
 {
-  "name": "clintandkash",
+  "name": "clintcronin",
   "version": "1.0.0",
-  "description": "Website for the Clint & Kash podcast",
+  "description": "Website for the Clint Cronin Show",
   "main": "home.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misradeepika/clintandkash.git"
+    "url": "git+https://github.com/clintcronin/clintcroninshow.git"
   },
   "author": "Deepika Misra",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/misradeepika/clintandkash/issues"
+    "url": "https://github.com/clintcronin/clintcroninshow/issues"
   },
-  "homepage": "https://github.com/misradeepika/clintandkash#readme",
+  "homepage": "https://github.com/clintcronin/clintcroninshow#readme",
   "dependencies": {
     "@wrapi/instagram": "^0.1.0",
     "bunyan": "^1.8.1",

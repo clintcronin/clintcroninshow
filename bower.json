@@ -1,12 +1,12 @@
 {
-  "name": "clintandkash",
-  "description": "Website for the Clint & Kash podcast",
+  "name": "clintcroninshow",
+  "description": "Website for the Clint Cronin Show",
   "main": "index.js",
   "authors": [
     "Deepika Misra"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/misradeepika/clintandkash",
+  "homepage": "https://github.com/clintcronin/clintcroninshow",
   "private": true,
   "ignore": [
     "**/.*",
