@@ -30,7 +30,7 @@ module.exports = {
 	},
 	youtube : {
 		channelId : "UCtxTrESrkTrTymukyeRcMyw",
-		apiKey : "AIzaSyCNdiyWynSBz8jXvH7q8VN-wdikpaXhrko",
+		apiKey : "AIzaSyD3jq-m-yGEp9vLtVb90ed23Nc3Z6Qbm7c",
 		maxResults : 10
 	},
 	rssFeed : {
