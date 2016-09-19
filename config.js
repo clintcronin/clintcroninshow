@@ -29,8 +29,8 @@ module.exports = {
 		maxImagesCount : 20
 	},
 	youtube : {
-		channelId : "UC9QmyXvXURA64MWn3UR32XQ",
-		apiKey : "AIzaSyD3jq-m-yGEp9vLtVb90ed23Nc3Z6Qbm7c",
+		channelId : "UCtxTrESrkTrTymukyeRcMyw",
+		apiKey : "AIzaSyCNdiyWynSBz8jXvH7q8VN-wdikpaXhrko",
 		maxResults : 10
 	},
 	rssFeed : {
