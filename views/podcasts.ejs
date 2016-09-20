@@ -1,11 +1,15 @@
 <% layout('layout') -%>
 <%
 	terminateHtml = function(text) {
-		var maxChars = 500;
+		var maxChars = 1000;
 		text = text.replace(/\u00A0/g,'');
 		if (text.length <= maxChars) return text;
-		var lastClosingTag = text.lastIndexOf("</", maxChars);
-		return text.substring(0, lastClosingTag);
+		var lastClosingTag = text.lastIndexOf(". ", maxChars);
+		if (lastClosingTag > 0) {
+			return text.substring(0, lastClosingTag + 2);
+		} else {
+			return text;
+		}
 	}
 %>
 <div id="podcasts-ajax-container" class="ajax-container">
