@@ -2,7 +2,7 @@
 <%
 	terminateHtml = function(text) {
 		var maxChars = 1000;
-		text = text.replace(/\u00A0/g,'');
+		// text = text.replace(/\u00A0/g,'');
 		if (text.length <= maxChars) return text;
 		var lastClosingTag = text.lastIndexOf(". ", maxChars);
 		if (lastClosingTag > 0) {
