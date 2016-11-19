@@ -36,7 +36,7 @@ exports.getRssFeed = function(callback) {
 				"guid" : item.guid,
 				"title" : item.title,
 				"pubDate" : item.pubDate,
-				"imageSrc" : item.image.url,
+				"imageSrc" : item.itunes:image,
 				"description" : item.description,
 				"author" : item.author,
 				"link" : item.link,
