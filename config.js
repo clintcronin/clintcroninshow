@@ -25,7 +25,7 @@ module.exports = {
 	},
 	instagram : {
 		clintcroninUserId : "19879795",
-		accessToken : "19879795.1677ed0.83c72be674c7404483fa7b8847a0a675",
+		accessToken : "19879795.1677ed0.d1bd324225d841f8913e3d6c57d7630d",
 		maxImagesCount : 20
 	},
 	youtube : {
